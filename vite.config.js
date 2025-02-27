@@ -8,4 +8,10 @@ export default defineConfig({
     hmr: true, // Ensure HMR is enabled
   },
   plugins: [react(), tailwindcss(),],
+  server: {
+    host: true,
+    port: 5173,
+    strictPort: true,
+    allowedHosts: ['.ngrok-free.app'], // Разрешаем все поддомены ngrok
+  },
 })
