@@ -27,11 +27,11 @@ function Home() {
           <div className="flex flex-col space-y-1">
             <h6 className='text-sm font-[500] text-white'>Ism familiyasi</h6>
             <h6 className='text-sm font-[500] text-white'>Telegram{window?.Telegram ? 1 : 0}</h6>
-            <h6 className='text-sm font-[500] text-white'>webapp{window.Telegram?.webApp ? 1 : 0}</h6>
+            <h6 className='text-sm font-[500] text-white'>webapp{window.Telegram?.WebApp ? 1 : 0}</h6>
             <h5
               onClick={() => {
 
-                logToTelegram("Кнопка нажата!");
+                console.log(window.Telegram);
 
               }}
               className='text-sm text-white'>+ 8 222 548 888</h5>
