@@ -28,6 +28,7 @@ function Home() {
             <h6 className='text-sm font-[500] text-white'>Ism familiyasi</h6>
             <h6 className='text-sm font-[500] text-white'>Telegram{window?.Telegram ? 1 : 0}</h6>
             <h6 className='text-sm font-[500] text-white'>webapp{window.Telegram?.WebApp ? 1 : 0}</h6>
+            webapp{window.Telegram?.WebApp ? 1 : 0} | id: {window.Telegram?.WebApp?.initDataUnsafe?.user?.id || 'нет данных'}
             <h5
               onClick={() => {
 
